@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ · Phosphor user guide</title>
+<meta name="description" content="Phosphor questions and troubleshooting.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="FAQ · Phosphor user guide">
+<meta property="og:description" content="Phosphor questions and troubleshooting.">
+<meta property="og:image" content="img/phone-1-home.webp">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="32" height="32"><span><span aria-hidden="true">◆ </span>phosphor <span class="path">~/faq</span></span></a>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html">home</a></li><li><a href="guide.html">guide</a></li><li><a href="use-cases.html">use cases</a></li><li><a href="cookbook.html">cookbook</a></li><li><a href="faq.html" aria-current="page">faq</a></li><li><a href="report.html">report a bug</a></li></ul></nav>
+</header>
+<main id="main">
+
+<h1>FAQ and troubleshooting<span class="cursor" aria-hidden="true"></span></h1>
+<p class="lede">Quick answers. If yours is not here, <a href="report.html">report it</a>.</p>
+<section class="box " id="questions" aria-labelledby="questions-h"><h2 class="tag" id="questions-h">questions</h2>
+<details><summary>Where are the settings?</summary><div><p>Tap <code>◆ phosphor</code> at the top left. If the top bar is hidden (it is on a fresh install), hold empty space and tap <code>settings</code> in the strip. You can also swipe up and type <code>:settings</code>.</p></div></details><details><summary>Can Phosphor replace my lock screen?</summary><div><p>Android does not allow that. Phosphor draws a live wallpaper that shows behind Android's own lock screen, in the same look as home. Android still asks for your PIN or fingerprint.</p></div></details><details><summary>I see two clocks on the lock screen.</summary><div><p>The second one is Android's. Use the setup step <code>system lock cards</code>: set lock screen notifications to "Don't show any notifications" and turn off "Dynamic clock".</p></div></details><details><summary>Which Android version do I need?</summary><div><p>Android 7 or newer.</p></div></details><details><summary>Does it need the internet?</summary><div><p>Only for the weather, the city lookup when you type a place, and the radio while a station plays. Everything else works offline.</p></div></details><details><summary>Does it collect my data?</summary><div><p>No. No account, no ads, no analytics. See the <a href="https://phosphor.zanoski.com/privacy">privacy policy</a>.</p></div></details><details><summary>Why does real audio bars ask for the microphone?</summary><div><p>Android uses the microphone permission for reading the sound the phone plays. Phosphor only reads how loud each band is, to move the bars. Nothing is recorded, kept or sent.</p></div></details><details><summary>Can I use my own font?</summary><div><p>Phosphor uses your phone's own monospace font. It does not bundle fonts.</p></div></details><details><summary>How many pages can I have?</summary><div><p>Up to ten.</p></div></details><details><summary>How do I go back to my old home screen?</summary><div><p>In Android settings, pick it as the Home app. On most phones that is under Apps, then Default apps.</p></div></details>
+</section><section class="box " id="fix" aria-labelledby="fix-h"><h2 class="tag" id="fix-h">troubleshooting</h2>
+<details><summary>The weather says tap to allow, or shows nothing.</summary><div><p>Allow location, or type a city under settings, <code>clock and weather</code>, <code>weather places</code>. If it says offline, check your connection and tap the panel to try again.</p></div></details><details><summary>The notifications panel is empty.</summary><div><p>Phosphor needs notification access. Open the setup guide and use step 3, <code>allow access</code>.</p></div></details><details><summary>Media controls do not show.</summary><div><p>Now playing appears only while a player has a session, and it needs notification access.</p></div></details><details><summary>The calendar or meeting panel shows nothing.</summary><div><p>Allow the calendar. The meeting page offers <code>allow calendar</code> when it has no access.</p></div></details><details><summary>The lock screen went back to a plain wallpaper.</summary><div><p>Android can drop a live wallpaper when the app is stopped or updated. Set it again: settings, <code>phone</code>, <code>lock screen</code>, <code>set as lock screen</code>.</p></div></details><details><summary>The radio does not play.</summary><div><p>The radio needs the internet. If a station is down, pick another one. Errors show in plain words, like offline or station not answering.</p></div></details><details><summary>Text is too small or too big.</summary><div><p>Change <code>text size</code> in look: small, medium or large. Phosphor also follows your phone's font size, up to 200%.</p></div></details><details><summary>I removed a panel by mistake.</summary><div><p>Tap undo in the strip within 6 seconds. Or add it again with <code>+ add</code>.</p></div></details><details><summary>I changed too much and want a fresh start.</summary><div><p>Settings, <code>help</code>, <code>reset to defaults</code>. Your settings are saved first, so <code>bring back the saved copy</code> can undo it.</p></div></details><details><summary>Motion looks choppy, or the battery drains fast.</summary><div><p>Check <code>frame rate</code> in settings, <code>motion</code>. 60 is smooth, 30 saves battery. Turning the ambience off saves the most. If it still looks wrong, <a href="report.html">report a bug</a> with your phone model.</p></div></details>
+</section>
+</main>
+<footer>
+  <ul>
+    <li><a href="https://play.google.com/store/apps/details?id=com.zanoshky.phosphor">Google Play</a></li>
+    <li><a href="https://phosphor.zanoski.com">phosphor.zanoski.com</a></li>
+    <li><a href="https://github.com/Zanoshky/phosphor-launcher/issues">Issues</a></li>
+    <li><a href="https://github.com/Zanoshky/phosphor-launcher/blob/main/LICENSE">License</a></li>
+  </ul>
+  <p>Guide text and images are shared under CC BY 4.0. The Phosphor app itself is proprietary. Made by Marko Zanoski.</p>
+</footer>
+</div>
+</body>
+</html>

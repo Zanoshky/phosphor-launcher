@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phosphor user guide</title>
+<meta name="description" content="Phosphor, a terminal home screen for Android: user guide, recipes, FAQ and bug reports.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Phosphor user guide">
+<meta property="og:description" content="Phosphor, a terminal home screen for Android: user guide, recipes, FAQ and bug reports.">
+<meta property="og:image" content="img/phone-1-home.webp">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="32" height="32"><span><span aria-hidden="true">◆ </span>phosphor <span class="path">~</span></span></a>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html" aria-current="page">home</a></li><li><a href="guide.html">guide</a></li><li><a href="use-cases.html">use cases</a></li><li><a href="cookbook.html">cookbook</a></li><li><a href="faq.html">faq</a></li><li><a href="report.html">report a bug</a></li></ul></nav>
+</header>
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-h">
+  <div>
+    <p class="boot dim">android launcher · user guide</p>
+    <h1 id="hero-h">Phosphor<span class="cursor" aria-hidden="true"></span></h1>
+    <p class="lede">Your home screen, as a living terminal. Phosphor draws your whole home screen in text, like an old monitor: a big block clock, a sky that follows the real weather, live gauges, your notifications, small tools, cliamp radio and your apps, all on one glowing grid.</p>
+    <p class="dim">This is the guide and the place to report bugs and ask for features. The app itself is on Google Play.</p>
+    <div class="actions">
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.zanoshky.phosphor">Get it on Google Play</a>
+      <a class="btn ghost" href="guide.html">Read the guide</a>
+      <a class="btn ghost" href="report.html">Report a bug</a>
+    </div>
+  </div>
+  <div class="phone"><img src="img/phone-1-home.webp" width="540" height="1080" alt="Phosphor home page in the phosphor theme: a big block clock, a weather panel for Zagreb, a now playing strip with radio controls, quick actions for torch, wifi and bluetooth, the October month and the shortcut row."></div>
+</section>
+
+<section class="box " id="what" aria-labelledby="what-h"><h2 class="tag" id="what-h">what it is</h2>
+
+<p>Everything you see is one character grid. Box lines, blocks and braille are drawn as shapes, so panels join with no gaps. The clock glows, digits glitch when they change, and an ambience like rain can fall through the empty cells.</p>
+<div class="grid">
+<div class="box "><h3 class="tag">pages</h3>
+<p>Up to ten pages you swipe between. Each one is a preset layout, a tool, or a page you build yourself from panels.</p>
+</div><div class="box "><h3 class="tag">panels</h3>
+<p>Clock, weather, forecast, notifications, agenda, month, quick actions, apps, notes, briefing, now playing, player, radio, monitor and every tool.</p>
+</div><div class="box "><h3 class="tag">looks</h3>
+<p>Fourteen themes: ten that glow and four light ones that print like ink on paper. CRT glass, ambiences and a night mode.</p>
+</div><div class="box "><h3 class="tag">lock screen</h3>
+<p>A live wallpaper draws your lock screen in the same grid, theme and glow as home.</p>
+</div></div>
+</section>
+
+<section class="box " id="shots" aria-labelledby="shots-h"><h2 class="tag" id="shots-h">screenshots</h2><span class="meta">8 shots</span>
+
+<p class="dim">From a real phone. Scroll sideways for more.</p>
+<div class="shots-wrap" tabindex="0" role="region" aria-label="Screenshots, scroll sideways">
+<ul class="shots"><li><figure><div class="phone"><img src="img/phone-1-home.webp" width="540" height="1080" alt="Phosphor home page in the phosphor theme: a big block clock, a weather panel for Zagreb, a now playing strip with radio controls, quick actions for torch, wifi and bluetooth, the October month and the shortcut row." loading="lazy"></div><figcaption>home: clock, weather, now playing, quick actions and the month</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-2-inbox.webp" width="540" height="1080" alt="The inbox page: notifications grouped by app with message text, a music strip, quick actions and the month." loading="lazy"></div><figcaption>inbox: notifications first</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-3-monitor.webp" width="540" height="1080" alt="The monitor page: battery charging at 100 percent, memory use, network speed and a weather panel." loading="lazy"></div><figcaption>monitor: battery, memory and network</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-4-edit.webp" width="540" height="1080" alt="Edit mode: the strip at the top reads add, pages, go, look, settings and done. Each panel shows its size, like 4x2, and a remove mark." loading="lazy"></div><figcaption>edit mode: size, move and remove panels</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-5-picker.webp" width="540" height="1080" alt="The add a panel picker with live previews of clock, weather, forecast, world clocks and sun times, each with its size." loading="lazy"></div><figcaption>add a panel: the picker</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-6-radio.webp" width="540" height="1080" alt="The radio page playing the synthwave station, with play controls and a list of stations: lofi, meditative, synthwave, edm, omarchy, chiptunes, amiga and ncs." loading="lazy"></div><figcaption>radio: cliamp stations</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-7-weather.webp" width="540" height="1080" alt="A large weather panel with the braille sky, temperature, a 24 hour curve, rain chance, UV, and sunrise and sunset." loading="lazy"></div><figcaption>weather: sky, hours and sun times</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-8-amber.webp" width="540" height="1080" alt="The same home page in the amber theme, with orange ink on black." loading="lazy"></div><figcaption>the amber theme</figcaption></figure></li></ul>
+</div>
+</section>
+
+<section class="box " id="start" aria-labelledby="start-h"><h2 class="tag" id="start-h">quick start</h2>
+
+<ol class="steps">
+  <li>Install Phosphor from <a href="https://play.google.com/store/apps/details?id=com.zanoshky.phosphor">Google Play</a>. It runs on Android 7 or newer.</li>
+  <li>Open it. The setup guide walks you through six steps: home screen, lock screen, notifications, system lock cards, weather and calendar, and battery.</li>
+  <li>Take the tour. It shows each gesture on your own home and you try it.</li>
+  <li>Swipe sideways for pages, swipe up for apps and search, swipe down for notifications.</li>
+  <li>Hold empty space for edit mode. From there you add panels, manage pages, change the look and open settings.</li>
+  <li>Pick a theme under look, and your home is ready.</li>
+</ol>
+<p><a href="guide.html">The full guide, from A to Z</a></p>
+
+</section>
+
+<div class="grid">
+<div class="box "><h2 class="tag">guide</h2>
+<p>Install, gestures, pages, edit mode, panels, themes, lock screen, settings, battery and accessibility.</p><p><a href="guide.html">Open the guide</a></p>
+</div>
+<div class="box "><h2 class="tag">use cases</h2>
+<p>Ideas for a focus phone, a music setup, a work dashboard and a night setup.</p><p><a href="use-cases.html">See use cases</a></p>
+</div>
+<div class="box "><h2 class="tag">cookbook</h2>
+<p>Short recipes: a music page, a calm page, night mode, weather for several cities.</p><p><a href="cookbook.html">Open the cookbook</a></p>
+</div>
+<div class="box "><h2 class="tag">help</h2>
+<p>Answers to common questions, fixes for common problems, and how to report a bug.</p><p><a href="faq.html">FAQ</a> · <a href="report.html">Report a bug</a></p>
+</div>
+</div>
+
+</main>
+<footer>
+  <ul>
+    <li><a href="https://play.google.com/store/apps/details?id=com.zanoshky.phosphor">Google Play</a></li>
+    <li><a href="https://phosphor.zanoski.com">phosphor.zanoski.com</a></li>
+    <li><a href="https://github.com/Zanoshky/phosphor-launcher/issues">Issues</a></li>
+    <li><a href="https://github.com/Zanoshky/phosphor-launcher/blob/main/LICENSE">License</a></li>
+  </ul>
+  <p>Guide text and images are shared under CC BY 4.0. The Phosphor app itself is proprietary. Made by Marko Zanoski.</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide · Phosphor user guide</title>
+<meta name="description" content="The Phosphor user guide from A to Z: setup, gestures, pages, edit mode, panels, themes, lock screen, settings, battery and accessibility.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Guide · Phosphor user guide">
+<meta property="og:description" content="The Phosphor user guide from A to Z: setup, gestures, pages, edit mode, panels, themes, lock screen, settings, battery and accessibility.">
+<meta property="og:image" content="img/phone-1-home.webp">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="32" height="32"><span><span aria-hidden="true">◆ </span>phosphor <span class="path">~/guide</span></span></a>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html">home</a></li><li><a href="guide.html" aria-current="page">guide</a></li><li><a href="use-cases.html">use cases</a></li><li><a href="cookbook.html">cookbook</a></li><li><a href="faq.html">faq</a></li><li><a href="report.html">report a bug</a></li></ul></nav>
+</header>
+<main id="main">
+
+<h1>The guide<span class="cursor" aria-hidden="true"></span></h1>
+<p class="lede">Everything Phosphor does, from install to the last setting, in order. Words in <code>code</code> are what you see in the app.</p>
+<nav class="box toc" aria-labelledby="toc-h"><h2 class="tag" id="toc-h">contents</h2><ol><li><a href="#install"><span class="n">01</span>Install</a></li><li><a href="#setup"><span class="n">02</span>First start and setup</a></li><li><a href="#home"><span class="n">03</span>Set as home screen</a></li><li><a href="#tour"><span class="n">04</span>The tour and the cheat sheet</a></li><li><a href="#gestures"><span class="n">05</span>Gestures</a></li><li><a href="#screen"><span class="n">06</span>What is on the screen</a></li><li><a href="#pages"><span class="n">07</span>Pages</a></li><li><a href="#edit"><span class="n">08</span>Edit mode</a></li><li><a href="#add"><span class="n">09</span>Add a panel</a></li><li><a href="#move"><span class="n">10</span>Move, resize and remove</a></li><li><a href="#presets"><span class="n">11</span>Preset pages and borders</a></li><li><a href="#apps"><span class="n">12</span>Apps, search and commands</a></li><li><a href="#notifications"><span class="n">13</span>Notifications</a></li><li><a href="#quick"><span class="n">14</span>Quick actions</a></li><li><a href="#weather"><span class="n">15</span>Weather and places</a></li><li><a href="#music"><span class="n">16</span>Music and radio</a></li><li><a href="#tools"><span class="n">17</span>Tool pages</a></li><li><a href="#looks"><span class="n">18</span>Themes and looks</a></li><li><a href="#motion"><span class="n">19</span>Ambience and frame rate</a></li><li><a href="#lock"><span class="n">20</span>Lock screen</a></li><li><a href="#settings"><span class="n">21</span>Settings map</a></li><li><a href="#link"><span class="n">22</span>Link devices</a></li><li><a href="#battery"><span class="n">23</span>Battery</a></li><li><a href="#a11y"><span class="n">24</span>Accessibility</a></li><li><a href="#privacy"><span class="n">25</span>Privacy and permissions</a></li><li><a href="#reset"><span class="n">26</span>Showcase and reset</a></li></ol></nav>
+
+<section class="box " id="install" aria-labelledby="install-h"><h2 class="tag" id="install-h">01 install</h2>
+
+<p>Get Phosphor on <a href="https://play.google.com/store/apps/details?id=com.zanoshky.phosphor">Google Play</a>. You pay once. There are no ads, no subscription and no account. Phosphor runs on Android 7 or newer, on phones and tablets, in portrait and landscape.</p>
+
+</section>
+
+<section class="box " id="setup" aria-labelledby="setup-h"><h2 class="tag" id="setup-h">02 first start and setup</h2>
+
+<p>The first start opens the setup guide. It has six steps, and each step has a button that opens the right system screen. A step ticks itself once it is done.</p>
+<ol class="steps">
+  <li><code>home screen</code>: make Phosphor your home screen, so the home button always brings you here.</li>
+  <li><code>lock screen</code>: use the Phosphor wallpaper on the lock screen. When Android asks, pick "Lock screen" or "Home and lock screen".</li>
+  <li><code>notifications</code>: allow notification access for the log, the preview and media controls. Nothing leaves your phone.</li>
+  <li><code>system lock cards</code>: Android draws its own cards and clock over the lock screen. Set lock screen notifications to "Don't show any notifications" and turn off "Dynamic clock".</li>
+  <li><code>weather, calendar</code>: allow location for local weather, or type a city instead. Allow the calendar for your events.</li>
+  <li><code>battery</code>: tips to save power. See <a href="#battery">battery</a>.</li>
+</ol>
+<p>A small <code>◇ setup n/6</code> hint stays in the top bar until the first three are done. Open the guide again any time from settings, <code>phone</code>, <code>setup guide</code>, or type <code>:setup</code> in search.</p>
+
+</section>
+
+<section class="box " id="home" aria-labelledby="home-h"><h2 class="tag" id="home-h">03 set as home screen</h2>
+
+<p>The easiest way is the first step of the setup guide: tap <code>set as home</code> and pick Phosphor. You can also do it in Android settings. On most phones it is under Apps, then Default apps, then Home app.</p>
+<p>To go back to your old launcher, pick it in the same place. Phosphor keeps your pages and settings.</p>
+
+</section>
+
+<section class="box " id="tour" aria-labelledby="tour-h"><h2 class="tag" id="tour-h">04 the tour and the cheat sheet</h2>
+
+<p>The tour has 13 steps. Each step is one gesture, tried on your real home: a ghost finger shows it, then you do it. The card has <code>‹ back</code>, <code>skip ›</code> and <code>end</code>. TalkBack reads each step.</p>
+<p>When the tour ends you can keep what you changed or <code>undo the tour</code>, which puts your pages and panels back.</p>
+<p>The <code>gestures</code> cheat sheet lists every gesture in groups: move around, edit the home, apps and notifications, panels and type. Tap a row to try it on your own home.</p>
+<p>Ways in: the last row of the setup guide, settings under <code>help</code>, or type <code>:tour</code> or <code>:gestures</code> in search.</p>
+
+</section>
+
+<section class="box " id="gestures" aria-labelledby="gestures-h"><h2 class="tag" id="gestures-h">05 gestures</h2>
+
+<dl class="keys">
+  <dt>swipe sideways</dt><dd>next or previous page</dd>
+  <dt>swipe up</dt><dd>apps and search</dd>
+  <dt>swipe down</dt><dd>notification shade</dd>
+  <dt>tap the path up top</dt><dd>the <code>go</code> menu: every page, all apps, search, notifications</dd>
+  <dt>home button</dt><dd>first page</dd>
+  <dt>hold empty space</dt><dd>edit mode</dd>
+  <dt>tap ◆ phosphor</dt><dd>settings</dd>
+  <dt>tap a shortcut</dt><dd>open the app</dd>
+  <dt>hold a shortcut</dt><dd>pin, hide, app info</dd>
+  <dt>tap a notification</dt><dd>open it</dd>
+  <dt>hold a notification</dt><dd>read it all</dd>
+  <dt>tap a quick action</dt><dd>toggle it</dd>
+  <dt>hold a quick action</dt><dd>pick your quick actions</dd>
+  <dt>tap the weather</dt><dd>next place</dd>
+  <dt>drag a border</dt><dd>resize panels</dd>
+  <dt>double tap a border</dt><dd>side by side, or stacked again</dd>
+  <dt>hold a panel, drag</dt><dd>move, swap or split</dd>
+</dl>
+<p class="note">When the top bar is hidden, "tap the path" becomes "hold, then <code>go</code>" and "tap ◆ phosphor" becomes "hold, then <code>settings</code>". Nothing needs a swipe: every swipe has a tap way too.</p>
+
+</section>
+
+<section class="box " id="screen" aria-labelledby="screen-h"><h2 class="tag" id="screen-h">06 what is on the screen</h2>
+
+<h3>The top bar</h3>
+<p>A path like <code>~/dashboard</code> says which page you are on. Tap it for the <code>go</code> menu. Tap <code>◆ phosphor</code> for settings. On a fresh install the top bar and the phone's status bar are hidden, like in the store pictures. Show them under settings, <code>home</code>, <code>top bar</code> and <code>status bar</code>. With the status bar hidden, a swipe down from the top edge shows it for a moment.</p>
+<h3>The panels</h3>
+<ul class="term">
+  <li><b>clock</b>: square pixel digits. When a digit changes it glitches, then crumbles into falling dots. Tap it for alarms.</li>
+  <li><b>weather</b>: a living braille sky for the real weather, the temperature, feels like, wind and sun times. Bigger panels add hours, rain, UV and more.</li>
+  <li><b>forecast</b>: the days ahead.</li>
+  <li><b>notifications</b> and <b>inbox</b>: your notifications, newest first. The inbox has notifications and events as tabs.</li>
+  <li><b>agenda</b> and <b>month</b>: what is coming up, and the month with today lit and busy days marked. Tap to open your calendar.</li>
+  <li><b>quick actions</b>: torch, wifi, sound and more.</li>
+  <li><b>apps</b>: your favourite apps as a list.</li>
+  <li><b>notes</b>: a note pad, saved as you type.</li>
+  <li><b>briefing</b>: your day as a short report.</li>
+  <li><b>now playing</b>, <b>player</b> and <b>radio</b>: what plays, with controls. See <a href="#music">music</a>.</li>
+  <li><b>monitor</b>: cpu, memory, disk and network.</li>
+</ul>
+<p>Panels show more when they are bigger and drop the least useful parts when they are smaller.</p>
+<h3>The shortcut row</h3>
+<p>At the bottom sits one row of up to five shortcuts: your pins first, then the apps you open most. Names are made short, like <code>msgs</code> for Messages, with the first letter lit.</p>
+
+</section>
+
+<section class="box " id="pages" aria-labelledby="pages-h"><h2 class="tag" id="pages-h">07 pages</h2>
+
+<p>Add up to ten pages and swipe between them. The default pages are dashboard, inbox and monitor. Each page is one of three things:</p>
+<ul class="term">
+  <li><b>a preset layout</b>: dashboard (a bit of everything), inbox (notifications first), weather (big sky and forecast), agenda (month and events), media (now playing), radio (internet radio by cliamp), apps, monitor (system gauges), today (your day as a briefing), notes (clock and a note pad) and zen (just the clock).</li>
+  <li><b>a tool</b>: todo, pomodoro, calc, world, sky, battery, storage, fetch or meeting. See <a href="#tools">tool pages</a>.</li>
+  <li><b>a page you build</b>: start empty and place panels like Android widgets.</li>
+</ul>
+<h3>Manage pages</h3>
+<p>Hold empty space, then tap <code>pages</code>. Under <code>this page</code> you can add a panel, open edit mode, pick a <code>layout</code> to start from, move the page with <code>‹ n of m ›</code>, or remove it. Under all pages, <code>add a page</code> starts an empty page and opens the picker.</p>
+
+</section>
+
+<section class="box " id="edit" aria-labelledby="edit-h"><h2 class="tag" id="edit-h">08 edit mode</h2>
+
+<p>Hold empty space, or a panel spot that has no hold of its own. The top bar turns into a strip:</p>
+<dl class="keys">
+  <dt>+ add</dt><dd>open the picker to add a panel</dd>
+  <dt>pages</dt><dd>add, move and remove pages</dd>
+  <dt>go</dt><dd>jump to another page</dd>
+  <dt>look</dt><dd>theme, text size, night mode, crt glass, see through</dd>
+  <dt>settings</dt><dd>every setting</dd>
+  <dt>done</dt><dd>leave edit mode</dd>
+</dl>
+<p>Free cells show a blueprint: a dashed grid with a <code>+</code> and the size of the free space. Each panel gets a frame with its size, a <code>✕</code> to remove it and a <code>◢</code> corner to resize it.</p>
+<p>Back, home, <code>done</code> or opening the app list leave edit mode. Every change is already saved.</p>
+<p>The page is a grid of cells: 4 columns on a phone, 6 on a small tablet or a phone in landscape, 8 on a big tablet. Sizes read like Android widgets: <code>4x2</code> means 4 columns by 2 rows. Landscape and tablets keep their own placement.</p>
+
+</section>
+
+<section class="box " id="add" aria-labelledby="add-h"><h2 class="tag" id="add-h">09 add a panel</h2>
+
+<ol class="steps">
+  <li>In edit mode tap <code>+ add</code>, or tap a free <code>+</code> spot to aim at it.</li>
+  <li>The picker shows cards in groups: time and weather, phone, media, system and tools. Each card has a live preview, its size and one line about it. Type to search.</li>
+  <li>Tap a card. It goes into the spot you aimed at, or to the best free spot. The strip then offers <code>put it here</code>, <code>more ways</code> and <code>cancel</code>.</li>
+  <li>Or hold a card and drag it onto the page. A lit outline shows where it lands.</li>
+</ol>
+<p>A new panel opens at its own size and never takes more than half the screen. A panel that is already on the page says <code>on this page</code>.</p>
+
+</section>
+
+<section class="box " id="move" aria-labelledby="move-h"><h2 class="tag" id="move-h">10 move, resize and remove</h2>
+
+<p>In edit mode:</p>
+<ul class="term">
+  <li><b>Tap a panel</b> for its menu: width <code>‹ ›</code>, height <code>‹ ›</code>, move sideways, move up or down, swap with, remove and done.</li>
+  <li><b>Hold and drag</b> a panel to move it. Drop it on another panel to swap them, or near an edge to split that space.</li>
+  <li><b>Drag the ◢ corner</b> to resize. It grows only into free cells.</li>
+  <li><b>Tap ✕</b> to remove a panel. The strip offers undo for 6 seconds.</li>
+</ul>
+<p>While you drag, a line at the top or bottom says what will happen: MOVE, ADD, SWAP, SPLIT, RESIZE, or NO ROOM when it does not fit.</p>
+
+</section>
+
+<section class="box " id="presets" aria-labelledby="presets-h"><h2 class="tag" id="presets-h">11 preset pages and borders</h2>
+
+<p>Preset layouts like dashboard and inbox are tiled: panels share borders. You can change them without edit mode:</p>
+<ul class="term">
+  <li><b>Drag a border</b> between two panels to make one taller and the other shorter.</li>
+  <li><b>Double tap a border</b> to put two panels side by side, or stack them again.</li>
+  <li><b>Hold a panel's top edge</b> and drag it onto another panel to swap them.</li>
+</ul>
+<p>On a wide screen, drag the gap between the two columns, or double tap it to mirror them. Hold empty space, then <code>pages</code>, then <code>panels</code> lists every border with the same actions, plus <code>reset splits</code>.</p>
+<p>Edit mode works on presets too. The first real change saves the page as your own, with the same name.</p>
+
+</section>
+
+<section class="box " id="apps" aria-labelledby="apps-h"><h2 class="tag" id="apps-h">12 apps, search and commands</h2>
+
+<p>Swipe up, or use <code>all apps</code> and <code>search</code> in the <code>go</code> menu.</p>
+<ul class="term">
+  <li>Type to find any app, even with typos. Matches light up letter by letter.</li>
+  <li>Enter opens the top match, or searches the web.</li>
+  <li>Hold an app to <code>pin to the top</code>, <code>hide from the list</code>, open <code>app info</code> or <code>uninstall</code>.</li>
+  <li>Apps are listed most opened first. Switch to a to z under settings, <code>home</code>, <code>app order</code>. In a to z, drag the letter rail to jump.</li>
+</ul>
+<h3>Commands</h3>
+<p>Type a colon first, then a command. Without the colon, a matching app wins.</p>
+<dl class="keys">
+  <dt>:settings</dt><dd>open settings</dd>
+  <dt>:edit</dt><dd>edit mode</dd>
+  <dt>:add</dt><dd>add a panel to this page</dd>
+  <dt>:pages</dt><dd>add, move or remove pages</dd>
+  <dt>:layout zen</dt><dd>turn this page into a layout</dd>
+  <dt>:theme amber</dt><dd>use a theme (<code>:theme</code> alone picks the next one)</dd>
+  <dt>:ambience</dt><dd>next ambience</dd>
+  <dt>:quick</dt><dd>pick quick actions</dd>
+  <dt>:lock</dt><dd>lock screen settings</dd>
+  <dt>:link</dt><dd>pair devices and sync the theme</dd>
+  <dt>:setup</dt><dd>the setup guide</dd>
+  <dt>:tour, :gestures</dt><dd>the tour and the cheat sheet</dd>
+  <dt>:boot</dt><dd>replay the boot</dd>
+</dl>
+
+</section>
+
+<section class="box " id="notifications" aria-labelledby="notifications-h"><h2 class="tag" id="notifications-h">13 notifications</h2>
+
+<p>Notifications need notification access (setup step 3). New ones type themselves in.</p>
+<ul class="term">
+  <li><b>Tap</b> a notification to open it.</li>
+  <li><b>Hold</b> it for a preview with the full text and <code>[ open ]</code>, <code>[ dismiss ]</code> and <code>[ close ]</code>. The preview never marks it read or removes it unless you tap dismiss.</li>
+  <li>When they do not all fit, each app gets one line with a count like <code>×3</code>.</li>
+  <li>A bigger panel adds a summary, like "7 from 3 apps", and arrivals per hour.</li>
+</ul>
+
+</section>
+
+<section class="box " id="quick" aria-labelledby="quick-h"><h2 class="tag" id="quick-h">14 quick actions</h2>
+
+<p>Quick actions show up to seven actions you pick from nineteen: torch, wifi, bluetooth, sound, do not disturb, location, battery saver, airplane, mobile data, nfc, hotspot, volume, brightness, rotation, cast, camera, timer, calculator and screen.</p>
+<p>Torch, sound and do not disturb switch in place. Others open the right system page and show their live state. A taller panel adds sliders for media, screen, ring and alarm volume, each with <code>−</code> and <code>+</code>.</p>
+<p>Pick your actions under settings, <code>home</code>, <code>quick actions</code>, or hold a quick action.</p>
+
+</section>
+
+<section class="box " id="weather" aria-labelledby="weather-h"><h2 class="tag" id="weather-h">15 weather and places</h2>
+
+<p>Weather comes from Open Meteo. There is no account and no key. It is fetched at most every 30 minutes.</p>
+<p>Under settings, <code>clock and weather</code>, <code>weather places</code>:</p>
+<ul class="term">
+  <li><code>add a city</code>: type a name. With only cities set, no location permission is needed.</li>
+  <li><code>add my location</code>: use the phone's location.</li>
+  <li>Tap a place in the list to remove it.</li>
+</ul>
+<p>With several places, tap the weather panel to step to the next one. The lock screen and the sky tool follow the place you show. Also here: <code>clock</code> 12h or 24h, and <code>units</code> °c or °f.</p>
+
+</section>
+
+<section class="box " id="music" aria-labelledby="music-h"><h2 class="tag" id="music-h">16 music and radio</h2>
+
+<ul class="term">
+  <li><b>now playing</b>: title, artist, a seek bar and play controls. It appears only while something plays, and needs notification access.</li>
+  <li><b>player</b>: big controls, the spectrum, album art and the queue when the player shares one.</li>
+  <li><b>radio</b>: internet radio stations from cliamp. Radio by cliamp, radio.cliamp.stream. Nothing connects until you press play. Next and previous switch station.</li>
+</ul>
+<p><b>Real audio bars</b> (settings, <code>home</code>) make the bars follow the loudness of the music. Android asks for the microphone for this, because that is the permission that reads the sound mix. Nothing is recorded, kept or sent. Off until you turn it on.</p>
+
+</section>
+
+<section class="box " id="tools" aria-labelledby="tools-h"><h2 class="tag" id="tools-h">17 tool pages</h2>
+
+<p>Any page can be a tool. Each tool fills the whole page and fits any text size.</p>
+<dl class="keys">
+  <dt>todo</dt><dd>a todo list to add, tick and clear</dd>
+  <dt>pomodoro</dt><dd>a focus timer with breaks and rounds. A focus round counts down 5 4 3 2 1 with a soft buzz first. Tap during the count to call it off. It buzzes when a phase ends, even with the screen off.</dd>
+  <dt>calc</dt><dd>a calculator with big keys and exact maths</dd>
+  <dt>world</dt><dd>the time in other cities</dd>
+  <dt>sky</dt><dd>sunrise, sunset and the moon</dd>
+  <dt>battery</dt><dd>level, heat, power and the last day</dd>
+  <dt>storage</dt><dd>disk usage as a map</dd>
+  <dt>fetch</dt><dd>system info like fastfetch</dd>
+  <dt>meeting</dt><dd>your next meeting and when it starts: "in 25 min", "now" while it runs, or "tomorrow 9:00". Tap it to open the event.</dd>
+</dl>
+
+</section>
+
+<section class="box " id="looks" aria-labelledby="looks-h"><h2 class="tag" id="looks-h">18 themes and looks</h2>
+
+<p>Open <code>look</code> in edit mode, or the look group in settings.</p>
+<h3>Themes</h3>
+<p>Dark themes glow like an old monitor: phosphor (black and #0068ff), amber, matrix, ice, crimson, violet, cyan, sakura, toxic and navy.</p>
+<p>Light themes print instead: paper, chalk, riso and forest. They use crisp ink, a second ink offset under the clock like a riso print, and paper grain in place of scanlines.</p>
+<h3>The rest of look</h3>
+<dl class="keys">
+  <dt>theme</dt><dd>‹ › steps through all fourteen</dd>
+  <dt>text size</dt><dd>small, medium or large</dd>
+  <dt>night mode</dt><dd>from 22 to 7 the look is ice, then back to your theme</dd>
+  <dt>crt glass</dt><dd>scanlines, a curved tube edge and a reflection</dd>
+  <dt>see through</dt><dd>under 100, your wallpaper shows through</dd>
+  <dt>panels</dt><dd>how solid panels stay while see through is on</dd>
+  <dt>showcase setup</dt><dd>the look from the store pictures</dd>
+</dl>
+<p>The font is your phone's own monospace font. Nothing is bundled.</p>
+
+</section>
+
+<section class="box " id="motion" aria-labelledby="motion-h"><h2 class="tag" id="motion-h">19 ambience and frame rate</h2>
+
+<p>Under settings, <code>motion</code>:</p>
+<dl class="keys">
+  <dt>ambience</dt><dd>off, rain, stars, embers, snow, aurora, fireflies, warp, tide, constellations, lava, circuit, meteors, storm, or cycle through them all</dd>
+  <dt>frame rate</dt><dd>30, 60 (the default) or max. It sets everything that moves on its own. Touch and scrolling always run at the screen's full rate.</dd>
+</dl>
+<p>Small things you will notice: the screen turns on like an old tube, a sheen runs along every bar, a ripple runs through the grid where you touch, and sparks fly when an app opens.</p>
+
+</section>
+
+<section class="box " id="lock" aria-labelledby="lock-h"><h2 class="tag" id="lock-h">20 lock screen</h2>
+
+<p>Android does not let an app replace the lock screen, but it does show your wallpaper behind it. Phosphor comes with a live wallpaper that draws the lock screen in the same grid, theme, glow and glass as home: a block clock, the date, weather, battery, your next event, how many notifications wait, and a blinking prompt.</p>
+<p>Open settings, <code>phone</code>, <code>lock screen</code>:</p>
+<dl class="keys">
+  <dt>style</dt><dd>match home, or any theme</dd>
+  <dt>sky</dt><dd>weather (the real sky), rain, snow, stars or off</dd>
+  <dt>motion</dt><dd>off draws one still frame a minute</dd>
+  <dt>clock, weather, battery, next event</dt><dd>turn each pane on or off</dd>
+  <dt>notifications</dt><dd>off, names (app names and counts, the default) or full text</dd>
+  <dt>hide system cards</dt><dd>opens Android's own lock screen page</dd>
+  <dt>set as lock screen</dt><dd>applies the wallpaper</dd>
+</dl>
+<p class="note">The lock screen can be seen by anyone holding your phone. By default it shows app names, times and counts, not message text.</p>
+
+</section>
+
+<section class="box " id="settings" aria-labelledby="settings-h"><h2 class="tag" id="settings-h">21 settings map</h2>
+
+<p>Tap <code>◆ phosphor</code>, or hold empty space and tap <code>settings</code>. <code>search settings</code> is the first row: type part of a name to find any setting.</p>
+<dl class="keys">
+  <dt>look</dt><dd>theme, text size, night mode, crt glass, see through, panels, showcase setup</dd>
+  <dt>motion</dt><dd>ambience, frame rate</dd>
+  <dt>home</dt><dd>pages, quick actions, app order, top bar, status bar, real audio bars</dd>
+  <dt>clock and weather</dt><dd>clock, units, weather places</dd>
+  <dt>feel</dt><dd>haptics (off, soft, normal, strong), scroll ticks, try every effect</dd>
+  <dt>phone</dt><dd>lock screen, link devices, setup guide</dd>
+  <dt>help</dt><dd>tour, gestures, reset to defaults, the version, replay boot</dd>
+</dl>
+
+</section>
+
+<section class="box " id="link" aria-labelledby="link-h"><h2 class="tag" id="link-h">22 link devices</h2>
+
+<p><code>link devices</code> syncs your theme with Hyprtile or another Phosphor on the same wifi, and with an Omarchy computer through the Phone Sync plugin. Turn link on, pick the other device, and check that both screens show the same six digit code.</p>
+<p>It stays on your own network. Only theme names and colours go to devices you paired. It is off by default. More on the <a href="https://phosphor.zanoski.com/phone-sync">Phone Sync page</a>.</p>
+
+</section>
+
+<section class="box " id="battery" aria-labelledby="battery-h"><h2 class="tag" id="battery-h">23 battery</h2>
+
+<p>Home draws only when something changes, or while an ambience or effect moves. Nothing runs in the background: no services and no timers, apart from the pomodoro alarm and the radio while it plays. The lock screen stops drawing when the screen is off.</p>
+<p>To save more:</p>
+<ul class="term">
+  <li>Set <code>frame rate</code> to 30.</li>
+  <li>Set <code>ambience</code> to off.</li>
+  <li>Turn <code>motion</code> off for the lock screen.</li>
+  <li>Pick a dark theme on an OLED phone.</li>
+</ul>
+<p>Battery saver brings motion to 30 frames a second and holds the weather sky still, unless you picked a frame rate yourself. Android's "remove animations" holds everything still.</p>
+
+</section>
+
+<section class="box " id="a11y" aria-labelledby="a11y-h"><h2 class="tag" id="a11y-h">24 accessibility</h2>
+
+<ul class="term">
+  <li>Everything you touch has a target of at least 48dp.</li>
+  <li>Text is lifted to a 7:1 contrast on its background in every theme. The big clock follows the 3:1 rule for large text.</li>
+  <li>TalkBack reads every button, row and panel, and the tour announces each step.</li>
+  <li>The system font size is honoured up to 200%. With large text, each page becomes one full size panel.</li>
+  <li>No action needs a swipe: tap the path for the <code>go</code> menu, and sliders have <code>−</code> and <code>+</code>.</li>
+  <li>Blinking stays under 3 flashes a second. Android's "remove animations" stops motion.</li>
+</ul>
+
+</section>
+
+<section class="box " id="privacy" aria-labelledby="privacy-h"><h2 class="tag" id="privacy-h">25 privacy and permissions</h2>
+
+<p>No account, no ads, no analytics. Your notifications, calendar and apps never leave the phone. All permissions are optional:</p>
+<dl class="keys">
+  <dt>location</dt><dd>local weather. Optional: type a city instead.</dd>
+  <dt>calendar</dt><dd>the agenda, month and meeting panels</dd>
+  <dt>notification access</dt><dd>the log and the media panel</dd>
+  <dt>microphone</dt><dd>only for real audio bars, off until you turn it on</dd>
+</dl>
+<p>The only network calls are the weather request, one lookup when you type a city, and the radio stream while a station plays. Read the full <a href="https://phosphor.zanoski.com/privacy">privacy policy</a>.</p>
+
+</section>
+
+<section class="box " id="reset" aria-labelledby="reset-h"><h2 class="tag" id="reset-h">26 showcase and reset</h2>
+
+<p><code>showcase setup</code> (in look) swaps in the look from the store: the phosphor theme, the aurora, and a home page of widgets.</p>
+<p><code>reset to defaults</code> (in help) puts look, pages and panels back to a fresh install. Notes, weather places, pinned apps and linked devices stay.</p>
+<p>Both save your settings first. Open the same menu again and tap <code>bring back the saved copy</code> to undo.</p>
+
+</section>
+
+</main>
+<footer>
+  <ul>
+    <li><a href="https://play.google.com/store/apps/details?id=com.zanoshky.phosphor">Google Play</a></li>
+    <li><a href="https://phosphor.zanoski.com">phosphor.zanoski.com</a></li>
+    <li><a href="https://github.com/Zanoshky/phosphor-launcher/issues">Issues</a></li>
+    <li><a href="https://github.com/Zanoshky/phosphor-launcher/blob/main/LICENSE">License</a></li>
+  </ul>
+  <p>Guide text and images are shared under CC BY 4.0. The Phosphor app itself is proprietary. Made by Marko Zanoski.</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User guide
+    url: https://zanoshky.github.io/phosphor-launcher/
+    about: Setup, gestures, recipes and answers to common questions.
+  - name: phosphor.zanoski.com
+    url: https://phosphor.zanoski.com
+    about: The Phosphor website, with the privacy policy and contact details.
