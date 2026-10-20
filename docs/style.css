@@ -181,3 +181,11 @@ footer a { display: inline-flex; align-items: center; min-height: 48px; padding:
 
 @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } html { scroll-behavior: auto; } }
 @media (min-width: 900px) { html { scroll-behavior: smooth; } }
+
+/* two phone shots side by side in the guide, stacked on small screens */
+.pair { display: flex; flex-wrap: wrap; gap: 16px; margin: 16px 0; }
+.pair figure { margin: 0; flex: 0 1 220px; }
+.pair .phone { margin: 0; width: 100%; max-width: 220px; border-radius: 16px; padding: 5px; }
+.pair .phone img { border-radius: 11px; }
+.pair .phone::after { inset: 5px; border-radius: 11px; }
+.pair figcaption { color: var(--dim); font-size: 14px; margin-top: 8px; }
