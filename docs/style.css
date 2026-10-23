@@ -127,7 +127,7 @@ section { margin-block: 0 36px; scroll-margin-top: 16px; }
   border: 1px solid var(--line-hi); border-radius: 22px; padding: 8px; background: #01040a;
   box-shadow: 0 -1px 0 rgba(160, 200, 255, 0.35), 0 0 40px rgba(0, 104, 255, 0.22);
 }
-.phone img { display: block; border-radius: 15px; aspect-ratio: 1 / 2; width: 100%; }
+.phone img { display: block; border-radius: 15px; width: 100%; height: auto; }
 .phone::after {
   content: ""; position: absolute; inset: 8px; border-radius: 15px; pointer-events: none;
   background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0 2px, rgba(0, 0, 0, 0.18) 2px 3px),
@@ -189,3 +189,29 @@ footer a { display: inline-flex; align-items: center; min-height: 48px; padding:
 .pair .phone img { border-radius: 11px; }
 .pair .phone::after { inset: 5px; border-radius: 11px; }
 .pair figcaption { color: var(--dim); font-size: 14px; margin-top: 8px; }
+
+/* ---------- bigger screens show more: the wrap widens on a 4K screen ---------- */
+@media (min-width: 1700px) { .wrap { max-width: 1480px; } body { font-size: 17px; } }
+@media (min-width: 2600px) { .wrap { max-width: 2000px; } body { font-size: 19px; } }
+
+/* ---------- numbers row under the hero ---------- */
+.stats { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
+.stats li { border: 1px solid var(--line); background: var(--panel); padding: 12px 14px; }
+.stats b { display: block; color: var(--bright); font-size: 26px; line-height: 1.2; text-shadow: 0 0 12px rgba(0, 104, 255, 0.6); }
+.stats span { color: var(--dim); font-size: 14px; }
+
+/* ---------- the looks gallery: more columns as the screen grows ---------- */
+.looks { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 700px) { .looks { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); } }
+.looks figure { margin: 0; }
+.looks .phone { width: 100%; border-radius: 16px; padding: 5px; }
+.looks .phone img { border-radius: 11px; }
+.looks .phone::after { inset: 5px; border-radius: 11px; }
+.looks figcaption { margin-top: 8px; font-size: 14px; color: var(--dim); }
+.looks figcaption b { display: block; color: var(--bright); font-size: 15px; }
+.looks .pro-tag { color: var(--link); }
+
+/* ---------- feature list in columns ---------- */
+.cols { columns: 2 320px; column-gap: 32px; }
+.cols li { break-inside: avoid; }
+.grid.three { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
