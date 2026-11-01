@@ -22,11 +22,11 @@ This repo is the public home for Phosphor users: the user guide, bug reports and
 ## Quick start
 
 1. Install Phosphor from Google Play. It runs on Android 7 or newer.
-2. Open it. The setup guide walks you through six steps: home screen, lock screen, notifications, system lock cards, weather and calendar, and battery.
-3. Take the tour. It shows each gesture on your own home and you try it.
+2. Open it. Three short screens: pick a look, pick your pages, and make it your home.
+3. The tour then shows three gestures on your own home, and you try each one.
 4. Swipe sideways for pages, swipe up for apps and search, swipe down for notifications.
-5. Hold empty space for edit mode. From there you add panels, manage pages, change the look and open settings.
-6. Pick a theme under look, and your home is ready.
+5. Hold empty space, or tap ◆ up top, for the main menu: looks, ready pages, add a panel, pages, edit layout, help and settings.
+6. Open looks and try the twenty looks, and your home is ready.
 
 ## The guide
 
