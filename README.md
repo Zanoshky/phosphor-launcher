@@ -21,7 +21,7 @@ This repo is the public home for Phosphor users: the user guide, bug reports and
 
 ## Quick start
 
-1. Install Phosphor from Google Play. It runs on Android 7 or newer.
+1. Install Phosphor from Google Play. It runs on Android 10 or newer.
 2. Open it. Three short screens: pick a look, pick your pages, and make it your home.
 3. The tour then shows three gestures on your own home, and you try each one.
 4. Swipe sideways for pages, swipe up for apps and search, swipe down for notifications.
