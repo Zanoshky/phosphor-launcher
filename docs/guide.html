@@ -17,7 +17,7 @@
 <div class="wrap">
 <header class="top">
   <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="32" height="32"><span><span aria-hidden="true">◆ </span>phosphor <span class="path">~/guide</span></span></a>
-  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html">home</a></li><li><a href="guide.html" aria-current="page">guide</a></li><li><a href="use-cases.html">use cases</a></li><li><a href="cookbook.html">cookbook</a></li><li><a href="faq.html">faq</a></li><li><a href="report.html">report a bug</a></li></ul></nav>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html">home</a></li><li><a href="guide.html" aria-current="page">guide</a></li><li><a href="use-cases.html">use cases</a></li><li><a href="cookbook.html">cookbook</a></li><li><a href="runbook.html">runbook</a></li><li><a href="faq.html">faq</a></li><li><a href="report.html">report a bug</a></li></ul></nav>
 </header>
 <main id="main">
 
@@ -387,7 +387,7 @@
 <h3 id="newpanels">More panels</h3>
 <dl class="keys">
   <dt>network</dt><dd>download and upload speed, a trace, the busiest second and totals since boot. In the system group. Tap for wifi.</dd>
-  <dt>habits</dt><dd>a habit grid you tap to mark a day. Tap the name line to mark today, hold it to rename. Up to 4 habits. Rows: <code>add a habit</code>, <code>week starts</code>.</dd>
+  <dt>habits</dt><dd>habits with goals and streaks, and today at a glance. Tap a habit to mark today, hold it to rename or set its goal. Rows: <code>add a habit</code>, <code>week starts</code>.</dd>
   <dt>countdown</dt><dd>days left to a date you pick, like "trip 24 12 2026", with a gauge of the wait. Row: <code>add a date</code>.</dd>
   <dt>stopwatch</dt><dd>a stopwatch with laps. It runs on with the app closed. Rows: <code>tenths</code>, <code>reset</code>.</dd>
   <dt>progress</dt><dd>how far through the day, week, month and year, as gauges. Row: <code>week starts</code>.</dd>
@@ -416,6 +416,22 @@
   <dt>art</dt><dd>ascii art, or your own words as a banner</dd>
   <dt>photo</dt><dd>a photo of yours, in the theme's colours: duotone, halftone, ascii, blocks or original</dd>
   <dt>whoami</dt><dd>your name, contact and motto as an id card, from settings, <code>you</code></dd>
+  <dt>donut</dt><dd>donut.c, the spinning ASCII torus</dd>
+  <dt>fire</dt><dd>aafire, the ASCII doom fire. It burns hotter as the cpu works.</dd>
+  <dt>life</dt><dd>Conway's game of life. Tap to seed it.</dd>
+  <dt>glyph</dt><dd>a 25 by 25 dot matrix: the clock, battery, a timer or a level</dd>
+  <dt>ring</dt><dd>your day as a ring round the clock, with your calendar on it</dd>
+  <dt>lifedots</dt><dd>your life, year, month or day in dots</dd>
+  <dt>mood</dt><dd>one tap a day for how the day was, and your year in colour</dd>
+  <dt>fasting</dt><dd>your fasting window as a ring</dd>
+  <dt>cycle</dt><dd>a private period tracker. It stays on this phone and never goes in a backup.</dd>
+  <dt>calendars</dt><dd>today in other calendars</dd>
+  <dt>live</dt><dd>downloads, rides and timers from your other apps, as live bars</dd>
+  <dt>planets</dt><dd>the planets up tonight and where to look, worked out on the phone</dd>
+  <dt>word</dt><dd>a word of the day with its meaning and an example</dd>
+  <dt>define</dt><dd>look up a word: meanings, examples and words that mean the same, from Wiktionary and Datamuse</dd>
+  <dt>convert</dt><dd>units offline, and money with the European Central Bank's daily rates</dd>
+  <dt>sea</dt><dd>waves, swell and sea temperature at a spot you pick</dd>
   <dt>cyberspace</dt><dd>the cyberspace.online terminal network. The public feed is free. With pro, sign in for your feed, replies, inbox, C-Mail, cIRC chat rooms and a braille globe of members. Your password is used once and never kept.</dd>
 </dl>
 <p>In the picker, countdown, since, progress, binary, word clock and on this day are in the time and weather group, cyberspace and meeting in phone, network, terminal, gauges and ip in system, and the rest in tools.</p>
@@ -444,6 +460,16 @@
   <dt>matchday</dt><dd>follow up to 3 teams from football, NBA, NFL, NHL and more: a countdown to kickoff, then the live score, minute, goals and cards, form, standing and the league table. It fetches only while it is on screen.</dd>
   <dt>devices</dt><dd>your buds, headphones, watch and car with their battery, and the last day as a graph. It never scans.</dd>
   <dt>health</dt><dd>steps toward your goal, heart rate and last night's sleep with its stages, from Health Connect. Without Health Connect it counts steps with the phone's own step counter. Read on this phone only, and nothing in the background.</dd>
+  <dt>people</dt><dd>your favourite people. Tap one to call or text.</dd>
+  <dt>wifi</dt><dd>the wifi networks around you, their signal and channels</dd>
+  <dt>ticker</dt><dd>stocks and coins with a chart</dd>
+  <dt>lyrics</dt><dd>the words of the song that plays, in time</dd>
+  <dt>screen time</dt><dd>time on your phone today, app by app</dd>
+  <dt>data</dt><dd>mobile and wifi data this month</dd>
+  <dt>apod</dt><dd>NASA's picture of the day in your theme's colours</dd>
+  <dt>speed</dt><dd>a speed test: download, upload and ping, from Cloudflare</dd>
+  <dt>uptime</dt><dd>your own sites, up or down this month</dd>
+  <dt>hass</dt><dd>your Home Assistant, one tap away: lights, switches and readings. Your token stays on this phone.</dd>
 </dl>
 <div class="pair"><figure><div class="phone"><img src="img/new-habits.webp" width="540" height="1080" loading="lazy" alt="A habits and focus page: a habit grid with months July to October, a countdown of 73 days left to new year, and a stopwatch at zero with start and reset keys."></div><figcaption>habits, countdown and stopwatch</figcaption></figure><figure><div class="phone"><img src="img/new-hacker.webp" width="540" height="1080" loading="lazy" alt="A hacker page in the matrix theme: a cmatrix panel of falling green kana, a binary clock reading 05:52:18, and a network panel, with the pipes background crawling at the top."></div><figcaption>cmatrix, binary and network over pipes</figcaption></figure></div>
 
@@ -599,18 +625,20 @@
 
 <p>Hold empty space or tap ◆, then <code>settings</code>, or type <code>:settings</code>. <code>search settings</code> is the first row: type part of a name to find any setting, even on the pages under settings.</p>
 <dl class="keys">
-  <dt>look</dt><dd>looks, theme, fine tune</dd>
+  <dt>look</dt><dd>looks, theme, wallpaper, fine tune</dd>
   <dt>motion and battery</dt><dd>frame rate, animations, touch ripples, page swipe line, letters by the line</dd>
-  <dt>home</dt><dd>you, top bar, status bar, keep in place, app dock, app shelf labels, hide passwords, app order, open the only match, quick actions, keyboard first, pull down, rotation, lock gesture, notifications, notification badges, app list</dd>
-  <dt>clock and weather</dt><dd>clock, units, weather places, calendar app</dd>
+  <dt>home</dt><dd>you, top bar, status bar, keep in place, app dock, app shelf icons, app shelf labels, hide passwords, app order, open the only match, quick actions, keyboard first, pull down, rotation, hinge gap, lock gesture, notifications, notification badges, app list, hidden apps</dd>
+  <dt>clock and weather</dt><dd>clock, clock font (block, round, led, ascii, shade, round led), date format, units, weather places, calendar app</dd>
   <dt>feel</dt><dd>haptics (off, soft, normal, strong), scroll ticks, try every effect</dd>
   <dt>phone</dt><dd>lock screen, screen saver, link devices</dd>
   <dt>privacy</dt><dd>privacy and permissions. See <a href="#privacy">privacy</a>.</dd>
   <dt>pro</dt><dd>phosphor pro, restore purchase, contacts in search, keyglow keyboard</dd>
   <dt>help</dt><dd>user guide (this page), report a bug or ask for a feature</dd>
-  <dt>support the developer</dt><dd>buy me a coffee</dd>
+  <dt>support the developer</dt><dd>buy me a coffee, and support and live api: an optional subscription, see <a href="#support">below</a></dd>
   <dt>about</dt><dd>the version. A tap replays the boot.</dd>
 </dl>
+<p><code>rate us</code> sits just above help in the main menu: rate Phosphor on Google Play, or tell us what is wrong. Phosphor never asks on its own.</p>
+<p><code>hidden apps</code> lists the apps you hid, so you can bring one back. <code>hinge gap</code> keeps every panel off the fold on a two screen phone. <code>app shelf icons</code> draws each app's own icon in your theme's inks. Work profile apps say "(work)".</p>
 <p>The tour, the cheat sheet, tips, the setup guide, the editor and reset to defaults are in the main menu, under <code>help</code>. The player's rows and the weather style are in each panel's own menu.</p>
 <h3 id="you">You</h3>
 <p>Settings, <code>home</code>, <code>you</code>: your <code>name</code>, a <code>machine name</code> like pixel, a <code>contact</code> and a <code>motto</code>. They show on the prompt and the top bar, like <code>◆ sam@pixel</code>, and in fetch, the boot, the whoami panel and the lock screen greeting. They stay on this phone.</p>
@@ -628,8 +656,10 @@
 <section class="box " id="pro" aria-labelledby="pro-h"><h2 class="tag" id="pro-h">24 phosphor pro</h2>
 
 <p>The app you bought is complete and yours to keep. Pro is an optional extra on top: one purchase adds every extra, now and later, with no subscription. Open settings, <code>phosphor pro</code>, then <code>add pro extras</code>. Without pro, a pro panel shows a padlock card that opens this menu.</p>
-<p><code>what pro adds</code> lists each extra: android widgets, 2fa codes, text and json editor, passwords, widget stacks, clipboard history, friend, a little pet, news reader and ticker, the cyberspace client, gps, satellites and sky, sensors, level and compass, live world panels (radar, aurora, quakes, iss, rates and more), ping and git, ambience, contacts in search, pro themes and crt looks. Trace, matchday, devices and health are pro panels too, in the pro group of the picker, and so are seven of the ready pages. See <a href="#protools">pro panels</a>, <a href="#crt">crt</a> and <a href="#c64">pro themes</a>.</p>
+<p><code>what pro adds</code> lists each extra: android widgets, 2fa codes, text and json editor, passwords, widget stacks, clipboard history, friend, a little pet, news reader and ticker, the cyberspace client, gps, satellites and sky, sensors, level and compass, live world panels (radar, aurora, quakes, iss, rates and more), ping and git, ambience, contacts in search, pro themes and crt looks. Trace, matchday, devices, health, people, wifi, ticker, lyrics, screen time, data, apod, speed, uptime and hass are pro panels too, in the pro group of the picker, and so are seven of the ready pages. See <a href="#protools">pro panels</a>, <a href="#crt">crt</a> and <a href="#c64">pro themes</a>.</p>
 <p><code>restore purchase</code> brings pro back on a new phone.</p>
+<h3 id="support">Support and live api</h3>
+<p>Separate from pro, and fully optional: a 0.99 a month subscription through Google Play that pays for bug fixes and the live feeds Phosphor shows, like weather, radar, the ISS and quakes. It unlocks nothing, and nothing is locked without it. Open settings and scroll to the end: <code>support and live api</code> is under support the developer. Once you subscribe, the same row says thank you and opens Google Play, where you can cancel any time.</p>
 
 </section>
 
