@@ -335,6 +335,12 @@
   <li><code>add my location</code>: use the phone's location.</li>
   <li>Tap a place in the list to remove it.</li>
 </ul>
+<p><code>forecast model</code> picks which weather model the forecast comes from. Tap it, or its <code>‹ ›</code>, to step through:</p>
+<ul class="term">
+  <li><code>auto</code>: Open Meteo picks the best model for each place. In Norway, Sweden, Finland and Denmark that is already MET Norway. This is the default.</li>
+  <li><code>met norway</code>, <code>ecmwf</code>, <code>dwd icon</code>, <code>gfs</code>, <code>météo france</code>: always that model, everywhere.</li>
+</ul>
+<p>With a model picked, the bottom of the weather panel names it, like <code>just now · met norway</code>. When a model has no reading of its own (UV in ECMWF, the rain chance in Météo France) or ends sooner (Météo France covers about 5 days), auto fills the rest, and the panel says so: <code>météo france for 5 days</code>.</p>
 <p><code>calendar app</code> picks which app opens your events and days, so Android stops asking each time. <code>ask each time</code> leaves it to Android.</p>
 <h3 id="wxstyles">Weather styles</h3>
 <p>Hold the weather panel and let go. Its menu has <code>style</code> and <code>weather places</code>. Tap <code>style</code>, or its <code>‹ ›</code>, to step through:</p>
@@ -628,7 +634,7 @@
   <dt>look</dt><dd>looks, theme, wallpaper, fine tune</dd>
   <dt>motion and battery</dt><dd>frame rate, animations, touch ripples, page swipe line, letters by the line</dd>
   <dt>home</dt><dd>you, top bar, status bar, keep in place, app dock, app shelf icons, app shelf labels, hide passwords, app order, open the only match, quick actions, keyboard first, pull down, rotation, hinge gap, lock gesture, notifications, notification badges, app list, hidden apps</dd>
-  <dt>clock and weather</dt><dd>clock, clock font (block, round, led, ascii, shade, round led), date format, units, weather places, calendar app</dd>
+  <dt>clock and weather</dt><dd>clock, clock font (block, round, led, ascii, shade, round led), date format, units, weather places, forecast model, calendar app</dd>
   <dt>feel</dt><dd>haptics (off, soft, normal, strong), scroll ticks, try every effect</dd>
   <dt>phone</dt><dd>lock screen, screen saver, link devices</dd>
   <dt>privacy</dt><dd>privacy and permissions. See <a href="#privacy">privacy</a>.</dd>
