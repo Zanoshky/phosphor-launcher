@@ -415,7 +415,7 @@
   <dt>wordclock</dt><dd>the time in words, on a grid of letters</dd>
   <dt>snake</dt><dd>a snake game that plays itself until you touch it</dd>
   <dt>pipes</dt><dd>pipes.sh, neon pipes that crawl and turn</dd>
-  <dt>terminal</dt><dd>hysh, a tiny shell that opens apps and sets themes</dd>
+  <dt>terminal</dt><dd>hysh, a tiny shell that opens apps and sets themes. With <a href="#termux">termux</a> set up, <code>t</code> and a command runs it in your own Termux.</dd>
   <dt>gauges</dt><dd>conky style rings for cpu, memory, storage and heat</dd>
   <dt>dash</dt><dd>an eww style card with a greeting, chips and a quote</dd>
   <dt>ip</dt><dd>your address, netmask, gateway and dns, as ipcalc shows them</dd>
@@ -640,6 +640,7 @@
   <dt>privacy</dt><dd>privacy and permissions. See <a href="#privacy">privacy</a>.</dd>
   <dt>pro</dt><dd>phosphor pro, restore purchase, contacts in search, keyglow keyboard</dd>
   <dt>help</dt><dd>user guide (this page), report a bug or ask for a feature</dd>
+  <dt>for ricers</dt><dd>all settings, commands, my looks, <a href="#termux">termux</a></dd>
   <dt>support the developer</dt><dd>insider: an optional subscription, see <a href="#support">below</a></dd>
   <dt>about</dt><dd>the version. A tap replays the boot.</dd>
 </dl>
@@ -666,12 +667,19 @@
 <p><code>restore purchase</code> brings pro back on a new phone.</p>
 <h3 id="support">Insider</h3>
 <p>Separate from pro, and fully optional: a 0.99 a month subscription through Google Play that pays for bug fixes and the live feeds Phosphor shows, like weather, radar, the ISS and quakes. Insiders get new features before everyone else (each one opens to every user on a set date), their bug reports and ideas read first, and an Insider mark in About with their date. Nothing free or in Pro ever moves behind it. Open settings and scroll to the end: <code>insider</code> is under support the developer. Once you subscribe, the same row says thank you and opens Google Play, where you can cancel any time.</p>
+<h3 id="browser">Browser panel, for insiders</h3>
+<p>A web browser on your home screen. Pages come in as text in your theme, like lynx: tap a link to follow it, tap a search box to type, Back goes back. Add <code>browser</code> from the tools group of the picker. Tap the address row to type an address or words to search. Hold the panel for <code>bookmark this</code>, <code>bookmarks</code>, <code>reader view</code>, <code>search with</code> (duckduckgo, wiby or wikipedia), <code>share link</code>, <code>fill the page</code>, <code>text size</code> and <code>clear history</code>.</p>
+<p>A page that needs more, a login or a video, opens full: <code>open full</code> shows the page as it really is, in its own window, with <code>javascript in full</code> on or off. Its menu clears cookies and site data. <code>open in your browser</code> hands the page to your usual browser. The browser panel comes with Insider and stays with it. It does not come to Pro later. Without Insider the panel shows a card that opens the Insider menu.</p>
+<h3 id="termux">Termux scripts, early access</h3>
+<p>Run your own scripts from Termux on the home screen. Insiders have it now. From 1 February 2027 it is part of pro. Phosphor does not bring Linux with it: you need the free Termux app from F-Droid or GitHub. The Google Play Termux cannot take commands from other apps.</p>
+<ol class="steps"><li>Open settings. Under <code>for ricers</code>, tap <code>termux</code>.</li><li><code>1 get termux</code>: install it, open it once and wait for the prompt.</li><li><code>2 turn on commands</code>: Phosphor copies one line. Paste it in Termux and press enter.</li><li><code>3 allow phosphor</code>: Android asks if Phosphor may run commands in your Termux. It runs only what you give it.</li><li><code>4 test</code>: runs echo and uname in Termux and shows the answer.</li></ol>
+<p>Then type <code>t</code> and any command in the terminal panel, like <code>t ls ~</code>. A word hysh does not know goes to Termux too. Add a <code>script</code> panel, from the system group, to show what a script prints, on a timer that runs only while the panel is on screen. Hold it for <code>script</code> to pick one, <code>run every</code>, <code>run now</code>, <code>name</code> and <code>time out</code>. Ready scripts and the full setup are at <a href="https://termux.zanoski.com/">termux.zanoski.com</a>, and seven ready widgets at <a href="https://termux.zanoski.com/widgets">termux.zanoski.com/widgets</a>.</p>
 
 </section>
 
 <section class="box " id="battery" aria-labelledby="battery-h"><h2 class="tag" id="battery-h">25 battery</h2>
 
-<p>Home draws only when something changes, or while a motion scene, live weather or an effect moves. Nothing runs in the background: no services and no timers, apart from timers and the pomodoro alarm when they ring, and the radio while it plays. The lock screen stops drawing when the screen is off.</p>
+<p>Home draws only when something changes, or while a motion scene, live weather or an effect moves. An idle page draws nothing, and a panel stops when nothing on it moves. Of the crt tubes only vhs, whose band rolls, keeps an idle home drawing. Nothing runs in the background: no services and no timers, apart from timers and the pomodoro alarm when they ring, and the radio while it plays. The lock screen stops drawing when the screen is off.</p>
 <p>To save more:</p>
 <ul class="term">
   <li>Set <code>frame rate</code> to 30.</li>
@@ -704,7 +712,7 @@
 <section class="box " id="privacy" aria-labelledby="privacy-h"><h2 class="tag" id="privacy-h">27 privacy and permissions</h2>
 
 <p>Settings, <code>privacy and permissions</code> opens the privacy page. It lists our promises: no ads, no tracking, no analytics, no crash reports, no error reports, no account and no AI. Phosphor has no server of its own: what it fetches comes straight from each service to your phone.</p>
-<p>Some things go past the phone only when you turn them on: the cyberspace sign in (pro), link devices, the network panels you place, and Android backup of your settings and notes. 2fa codes, the clipboard and sign ins never go into a backup.</p>
+<p>Some things go past the phone only when you turn them on: the cyberspace sign in (pro), link devices, the network panels you place, and Android backup of your settings and notes. 2fa codes, the clipboard, sign ins, health readings, link keys, the Home Assistant token and the browser's cookies never go into a backup.</p>
 <p>Every permission is optional and asked only when you turn on what needs it. The page lists each one with whether it is allowed now, and a tap opens Android's page for Phosphor, where you can change it:</p>
 <dl class="keys">
   <dt>location</dt><dd>weather where you are, rounded to about 1 km. A typed place works without it. Precise only for the gps panel (pro).</dd>
@@ -718,6 +726,7 @@
   <dt>notifications</dt><dd>the radio's controls in the shade and timers that ring</dd>
   <dt>local network</dt><dd>link devices and the router ping, on your own wifi only</dd>
   <dt>accessibility service</dt><dd>only for the lock gesture: it locks the screen and reads nothing</dd>
+  <dt>termux commands</dt><dd>only for <a href="#termux">termux scripts</a>: runs only what you type in the terminal panel or set in a script panel, in your own Termux</dd>
 </dl>
 <p>The page also lists what Android allows without asking, like internet, alarms and vibrate, each with what it is for.</p>
 <p>Day and night works out sunrise and sunset on the phone, from the place the weather already uses. Neither your location nor the gps position is sent to us. The app connects only for the features you use: the weather and a typed city, the radio while a station plays, and the panels you add that fetch from the web (air quality, holidays, on this day, news, radar, aurora, quakes, the space station, launches, rates, ping, git, matchday and cyberspace). Every host and what it receives is in the full <a href="https://phosphor.zanoski.com/privacy">privacy policy</a>, the last row of the privacy page.</p>
