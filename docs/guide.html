@@ -50,7 +50,7 @@
   <li><code>weather, calendar</code>: allow location for local weather, or type a city instead. Allow the calendar for your events.</li>
   <li><code>battery</code>: tips to save power, with <code>battery saver</code> and <code>motion off</code> buttons. See <a href="#battery">battery</a>.</li>
 </ol>
-<p>Under the steps the guide offers <code>take the tour</code>, <code>pick your look</code> (the <a href="#presets-look">presets</a>) and <code>lock gesture</code> (see <a href="#lockgesture">lock gesture</a>). <code>stop reminding</code> hides the nudge. Open the guide any time from the main menu, <code>help</code>, <code>setup guide</code>, or type <code>:setup</code> in search.</p>
+<p>Under the steps the guide offers <code>take the tour</code>, <code>pick your look</code> (the <a href="#presets-look">presets</a>) and <code>lock gesture</code> (see <a href="#lockgesture">lock gesture</a>). <code>stop reminding</code> hides the nudge. Open the guide any time from the main menu, <code>help</code>, <code>tour and gestures</code>, <code>setup guide</code>, or type <code>:setup</code> in search.</p>
 <p class="note">On a phone that had Phosphor before version 1.86, there was no first run, and the hint reads <code>◇ setup n/6</code> until the first three steps are done.</p>
 
 </section>
@@ -111,7 +111,7 @@
   <dt>edit layout</dt><dd><code>move and size</code> (edit mode), <code>move a panel</code> from a list, and <code>keep in place</code></dd>
   <dt>set as home</dt><dd>only until Phosphor is your home</dd>
   <dt>finish setup</dt><dd>only while setup steps are open</dd>
-  <dt>help</dt><dd>tour, gestures, tips, commands, setup guide, text editor, editor look, privacy policy, the version and reset to defaults</dd>
+  <dt>help</dt><dd>tour and gestures (the tour, the gesture list, tips, the setup guide and reset to defaults), the user guide, report a bug, privacy and permissions, more apps by zanoshky, insider and about with the version. Commands, the text editor and editor look sit under <code>customize</code>, <code>rice</code></dd>
   <dt>settings</dt><dd>every setting. See the <a href="#settings">settings map</a>.</dd>
 </dl>
 
@@ -208,7 +208,7 @@
 <section class="box " id="add" aria-labelledby="add-h"><h2 class="tag" id="add-h">09 add a panel</h2>
 
 <ol class="steps">
-  <li>Hold empty space and tap <code>add a panel</code>, or type <code>:add</code>. In edit mode tap <code>+ add</code>, or tap a free <code>+</code> spot to aim at it.</li>
+  <li>Hold empty space and tap <code>add a window</code>, or type <code>:add</code>. In edit mode tap <code>+ add</code>, or tap a free <code>+</code> spot to aim at it.</li>
   <li>The picker shows cards in groups: time and weather, phone, media, system, tools and pro. Each card has a live preview, its size and one line about it. Type to search.</li>
   <li>Tap a card. It goes into the spot you aimed at, or to the best free spot. The strip then offers <code>put it here</code>, <code>more ways</code> and <code>cancel</code>.</li>
   <li>Or hold a card and drag it onto the page. A lit outline shows where it lands.</li>
@@ -221,7 +221,7 @@
 
 <p>In edit mode:</p>
 <ul class="term">
-  <li><b>Tap a panel</b> for its menu: <code>what it shows</code>, the panel's own rows, <code>size ›</code> (wider, narrower, taller, shorter), <code>move ›</code>, <code>replace with ›</code>, <code>move to page ›</code>, <code>add a panel</code>, <code>keep in place</code>, <code>remove</code> and <code>done</code>.</li>
+  <li><b>Tap a panel</b> for its menu: <code>what it shows</code>, the panel's own rows, <code>size ›</code> (wider, narrower, taller, shorter), <code>move ›</code>, <code>replace with ›</code>, <code>move to page ›</code>, <code>add a window</code>, <code>keep in place</code>, <code>remove</code> and <code>done</code>.</li>
   <li><b>Hold and drag</b> a panel to move it. Drop it on another panel to swap them, or near an edge to split that space.</li>
   <li><b>Drag the ◢ corner</b> to resize. It grows only into free cells.</li>
   <li><b>Tap ✕</b> to remove a panel. The strip offers undo for 6 seconds.</li>
@@ -458,7 +458,7 @@
 <dl class="keys">
   <dt>widgets</dt><dd>Android widgets from your other apps, drawn inside a phosphor box on the grid. The widget chooser shows each widget's own picture beside its row, as Android's own widget picker does, and each app's row shows one of its widgets. A widget stack holds several in one box: swipe to flip through.</dd>
   <dt>2fa codes</dt><dd>an authenticator for your sign in codes, kept encrypted on this phone only and never in a backup. Scan a QR code with the camera or from a picture, bring all your codes over from Google Authenticator in one scan, and keep your own backup file sealed with a passphrase.</dd>
-  <dt>editor</dt><dd>plain text and json files: open a file, format it, check it and walk it as a tree. <code>editor look</code> in settings changes its extras.</dd>
+  <dt>editor</dt><dd>plain text and json files: open a file, format it, check it and walk it as a tree. <code>editor look</code> under <code>customize</code>, <code>rice</code> changes its extras.</dd>
   <dt>passwords</dt><dd>strong passwords and passphrases, made on the phone and never saved. The clipboard is cleared after. <code>hide passwords</code> in settings keeps them hidden until tapped.</dd>
   <dt>clipboard</dt><dd>what you copied, sealed on this phone, with pins. Off until you turn it on. Private copies like passwords are skipped.</dd>
   <dt>friend</dt><dd>fli, the terminal pet, as a panel: 18 pets with big line art, five traits (kindness, patience, playfulness, wisdom and humor) and 600 bits of everyday life advice. Feed it, pet it, play with it and ask it for advice. Roll an egg or type a seed.</dd>
@@ -682,7 +682,7 @@
 </dl>
 <p><code>rate us</code> sits just above help in the main menu: rate Phosphor on Google Play, or tell us what is wrong. Phosphor never asks on its own.</p>
 <p><code>hidden apps</code> lists the apps you hid, so you can bring one back. <code>hinge gap</code> keeps every panel off the fold on a two screen phone. <code>app shelf icons</code> draws each app's own icon in your theme's inks. Work profile apps say "(work)".</p>
-<p>The tour, the cheat sheet, tips, the setup guide, the editor and reset to defaults are in the main menu, under <code>help</code>. The player's rows and the weather style are in each panel's own menu.</p>
+<p>The tour, the cheat sheet, tips, the setup guide and reset to defaults are in the main menu, under <code>help</code>, <code>tour and gestures</code>. The text editor and editor look are under <code>customize</code>, <code>rice</code>. The player's rows and the weather style are in each panel's own menu.</p>
 <h3 id="you">You</h3>
 <p>Settings, <code>home</code>, <code>you</code>: your <code>name</code>, a <code>machine name</code> like pixel, a <code>contact</code> and a <code>motto</code>. They show on the prompt and the top bar, like <code>◆ sam@pixel</code>, and in fetch, the boot, the whoami panel and the lock screen greeting. They stay on this phone.</p>
 <p><code>rotation</code> steps through follow phone, portrait, landscape and always turns. <code>keyglow keyboard</code> opens Keyglow, a private keyboard in your phosphor colours, on Google Play. Keyglow and Fileglow, the file manager, can both take your theme, picture and CRT tube along.</p>
@@ -771,7 +771,7 @@
 
 <section class="box " id="reset" aria-labelledby="reset-h"><h2 class="tag" id="reset-h">28 reset to defaults</h2>
 
-<p>Main menu, <code>help</code>, <code>reset to defaults</code> puts look, pages and panels back to a fresh install. Notes, weather places, pinned apps and linked devices stay.</p>
+<p>Main menu, <code>help</code>, <code>tour and gestures</code>, then <code>reset to defaults</code> puts look, pages and panels back to a fresh install. Notes, weather places, pinned apps and linked devices stay.</p>
 <p>It saves your settings first. Open the same row again and tap <code>bring back the saved copy</code> to undo, or <code>keep my settings</code> to leave it.</p>
 <h3 id="safemode">Safe mode</h3>
 <p>If Phosphor stops three times in a row, in any part of the app (home, the lock wallpaper, the screen saver or the notifications), it starts bare. Home shows a short note with <code>apps</code>, <code>try again</code> and <code>pick another home</code>, and the lock wallpaper and the screen saver show plain black. Your pages and settings are kept. <code>try again</code> brings the full home back.</p>
