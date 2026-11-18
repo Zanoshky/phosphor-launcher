@@ -7,7 +7,7 @@
 <p align="center">Your home screen, as a living terminal. Phosphor draws your whole home screen in text, like an old monitor: a big block clock, a sky that follows the real weather, live gauges, your notifications, small tools, cliamp radio and your apps, all on one glowing grid.</p>
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.phosphor"><b>Google Play</b></a> ·
+  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.phosphor&amp;referrer=utm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dphosphor-2026-11"><b>Google Play</b></a> ·
   <a href="https://phosphor.zanoski.com"><b>phosphor.zanoski.com</b></a> ·
   <a href="https://zanoshky.github.io/phosphor-launcher/"><b>User guide</b></a> ·
   <a href="https://github.com/Zanoshky/phosphor-launcher/issues/new/choose"><b>Report a bug</b></a>
