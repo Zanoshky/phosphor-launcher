@@ -108,7 +108,7 @@
   <dt>ready pages</dt><dd>add a new page, ready made or classic. See <a href="#pages">pages</a>.</dd>
   <dt>add a panel</dt><dd>the picker. See <a href="#add">add a panel</a>.</dd>
   <dt>pages</dt><dd>every page, this page's name, order and removal, and go to</dd>
-  <dt>edit layout</dt><dd><code>move and size</code> (edit mode), <code>move a panel</code> from a list, and <code>keep in place</code></dd>
+  <dt>edit layout</dt><dd>one <code>move and size</code> row, straight into edit mode (also in a panel's hold menu), <code>move a panel</code> from a list, and <code>keep in place</code>. The size and move rows live inside edit mode.</dd>
   <dt>set as home</dt><dd>only until Phosphor is your home</dd>
   <dt>finish setup</dt><dd>only while setup steps are open</dd>
   <dt>help</dt><dd>tour and gestures (the tour, the gesture list, tips and the setup guide), the user guide, report a bug, privacy and permissions, more apps by zanoshky, insider and about with the version. Commands, the text editor and editor look sit under <code>customize</code>, <code>rice</code></dd>
@@ -256,8 +256,12 @@
   <li>Hold an app to <code>pin to the top</code>, <code>hide from the list</code>, open <code>app info</code> or <code>uninstall</code>.</li>
   <li><code>app list</code> (settings, <code>home</code>): roomy, or compact with two columns and tighter rows so more apps show at once.</li>
   <li>With pro, <code>contacts in search</code>: type a name or number to call or text. Off until you turn it on.</li>
+  <li id="rename">Hold an app and tap <code>rename</code> to give it a name of your own. Search finds both your name and Android's. Leave it empty to bring the old name back.</li>
+  <li id="private">Android 15 and up: apps in your private space show in the list, marked <code>private</code>, while the space is open. A locked space is never read. Private copies stay out of the dock, pins and folders. <code>uninstall</code> on a work or private copy removes only that copy.</li>
   <li>Apps are listed most opened first. Switch to a to z under settings, <code>home</code>, <code>app order</code>. In a to z, drag the letter rail to jump.</li>
 </ul>
+<h3 id="applist">App list options</h3>
+<p>Settings, <code>home</code>: <code>icons in the list</code> (a small icon before each name), <code>list header</code>, <code>list box</code>, <code>counts in the list</code>, <code>section letters</code>, <code>apps per row</code> (auto, 1, 2 or 3) and <code>letter rail</code>. With the rail off the a to z letters hide, but dragging the right edge still scrolls by letter. <code>hold time</code> sets how long a long press takes: system, or 200 to 1000 ms.</p>
 <h3>Commands</h3>
 <p>Type a colon first, then a command. Without the colon, a matching app wins. <code>:</code> alone lists them all, and <code>:help</code> shows a short list where each row runs its command.</p>
 <dl class="keys">
@@ -669,20 +673,24 @@
 <dl class="keys">
   <dt>look</dt><dd>looks, theme, wallpaper, fine tune</dd>
   <dt>motion and battery</dt><dd>frame rate, animations, touch ripples, page swipe line, letters by the line</dd>
-  <dt>home</dt><dd>you, top bar, status bar, keep in place, app dock, app shelf icons, app shelf labels, hide passwords, app order, open the only match, quick actions, keyboard first, pull down, rotation, hinge gap, lock gesture, notifications, notification badges, app list, hidden apps</dd>
+  <dt>home</dt><dd>you, top bar, status bar, keep in place, app dock, app shelf icons, app shelf labels, hide passwords, app order, open the only match, quick actions, keyboard first, pull down, rotation, hinge gap, lock gesture, notifications, notification badges, app list, list options, hold time, text lines, hidden apps</dd>
   <dt>clock and weather</dt><dd>clock, clock font (block, round, led, ascii, shade, round led), date format, units, weather places, forecast model, calendar app</dd>
   <dt>feel</dt><dd>haptics (off, soft, normal, strong), scroll ticks, try every effect</dd>
   <dt>phone</dt><dd>lock screen, screen saver, link devices</dd>
   <dt>privacy</dt><dd>privacy and permissions. See <a href="#privacy">privacy</a>.</dd>
   <dt>pro</dt><dd>phosphor pro, restore purchase, contacts in search, keyglow keyboard</dd>
   <dt>help</dt><dd>user guide (this page), report a bug or ask for a feature</dd>
-  <dt>for ricers</dt><dd>all settings, commands, my looks, <a href="#termux">termux</a></dd>
+  <dt>for ricers</dt><dd>all settings, copy settings, paste settings, commands, my looks, <a href="#termux">termux</a></dd>
   <dt>support the developer</dt><dd>insider: an optional subscription, see <a href="#support">below</a></dd>
   <dt>about</dt><dd>the version. A tap replays the boot.</dd>
 </dl>
 <p><code>rate us</code> sits just above help in the main menu: rate Phosphor on Google Play, or tell us what is wrong. Phosphor never asks on its own.</p>
 <p><code>hidden apps</code> lists the apps you hid, so you can bring one back. <code>hinge gap</code> keeps every panel off the fold on a two screen phone. <code>app shelf icons</code> draws each app's own icon in your theme's inks. Work profile apps say "(work)".</p>
 <p>The tour, the cheat sheet, tips and the setup guide are in the main menu, under <code>help</code>, <code>tour and gestures</code>. Reset to defaults is its own row at the end of <code>help</code>. The text editor and editor look are under <code>customize</code>, <code>rice</code>. The player's rows and the weather style are in each panel's own menu.</p>
+<h3 id="textlines">Text lines</h3>
+<p>Settings, <code>home</code>, <code>text lines</code> steps through <code>full</code>, <code>quiet</code> and <code>bare</code>. Quiet hides the captions, counts and hints around a panel's content. Bare also hides every panel title, so the content gets all the room. Place names, unlocks and advice stay. A hold menu row that the level hides says so.</p>
+<h3 id="settingstext">Copy and paste settings</h3>
+<p><code>copy settings</code> puts your look and options on the clipboard as plain text, in the same syntax as Hyprtile. Send it to a friend or paste it on another phone with <code>paste settings</code>. Phosphor shows how many settings it applied and which lines it skipped, and why. Secrets, ping hosts and sites stay out of the copy.</p>
 <h3 id="you">You</h3>
 <p>Settings, <code>home</code>, <code>you</code>: your <code>name</code>, a <code>machine name</code> like pixel, a <code>contact</code> and a <code>motto</code>. They show on the prompt and the top bar, like <code>◆ sam@pixel</code>, and in fetch, the boot, the whoami panel and the lock screen greeting. They stay on this phone.</p>
 <p><code>rotation</code> steps through follow phone, portrait, landscape and always turns. <code>keyglow keyboard</code> opens Keyglow, a private keyboard in your phosphor colours, on Google Play. Keyglow and Fileglow, the file manager, can both take your theme, picture and CRT tube along.</p>
