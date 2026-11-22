@@ -691,6 +691,12 @@
 <p>Settings, <code>home</code>, <code>text lines</code> steps through <code>full</code>, <code>quiet</code> and <code>bare</code>. Quiet hides the captions, counts and hints around a panel's content. Bare also hides every panel title, so the content gets all the room. Place names, unlocks and advice stay. A hold menu row that the level hides says so.</p>
 <h3 id="settingstext">Copy and paste settings</h3>
 <p><code>copy settings</code> puts your look and options on the clipboard as plain text, in the same syntax as Hyprtile. Send it to a friend or paste it on another phone with <code>paste settings</code>. Phosphor shows how many settings it applied and which lines it skipped, and why. Secrets, ping hosts and sites stay out of the copy.</p>
+<h3 id="gradientbg">Custom gradient background</h3>
+<p>A still gradient can sit behind the terminal grid on the home and on the lock screen. There is no picker for it yet: you set it with <code>paste settings</code>, in the <code>general</code> section.</p>
+<pre><code>general {
+    background = gradient rgba(0a0a14ff) rgba(8ec5ffff) 45deg
+}</code></pre>
+<p>Give two to eight colour stops, then an optional angle. A stop is <code>rgba(rrggbbaa)</code>, <code>rgb(rrggbb)</code>, <code>rgb(r,g,b)</code> or <code>0xaarrggbb</code>. End the alpha in <code>ff</code> for a solid colour. Do not start a colour with <code>#</code>, because <code>#</code> starts a comment. The angle is CSS style: <code>0deg</code> points up, <code>90deg</code> right, and it turns clockwise. It is <code>45deg</code> when left out. <code>background = off</code> clears it. A motion scene still draws over the gradient, so set <code>scene = off</code> too if you want it plain. See the <a href="cookbook.html#gradientbg">recipe</a>.</p>
 <h3 id="you">You</h3>
 <p>Settings, <code>home</code>, <code>you</code>: your <code>name</code>, a <code>machine name</code> like pixel, a <code>contact</code> and a <code>motto</code>. They show on the prompt and the top bar, like <code>◆ sam@pixel</code>, and in fetch, the boot, the whoami panel and the lock screen greeting. They stay on this phone.</p>
 <p><code>rotation</code> steps through follow phone, portrait, landscape and always turns. <code>keyglow keyboard</code> opens Keyglow, a private keyboard in your phosphor colours, on Google Play. Keyglow and Fileglow, the file manager, can both take your theme, picture and CRT tube along.</p>
